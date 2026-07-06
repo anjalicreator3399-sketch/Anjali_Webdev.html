@@ -2,118 +2,118 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
 
-        /* Pure page ka background greyish karne ke liye jisse white card upar ulat dikhe */
-        body {
-            background-color: #eef2f5;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-        }
+		/* Pure page ka background greyish karne ke liye jisse white card upar ulat dikhe */
+		body {
+			background-color: #eef2f5;
+			font-family: 'Segoe UI', Arial, sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			margin: 0;
+		}
 
-        /* Main parent container ko doosri pic jaisa white card banaya */
-        .parent {
-            background-color: #ffffff;
-            width: 300px;
-            border-radius: 16px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-            padding: 16px;
-            box-sizing: border-box;
-            height: 500px;
-            border-color: lightgray;
-            border: 1px;
-        }
+		/* Main parent container ko doosri pic jaisa white card banaya */
+		.parent {
+			background-color: #ffffff;
+			width: 300px;
+			border-radius: 16px;
+			box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+			padding: 16px;
+			box-sizing: border-box;
+			height: 500px;
+			border-color: lightgray;
+			border: 2px;
+		}
 
-        /* Card ki Image ko rounded aur perfect fit karne ke liye */
-        .parent img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 12px;
-            display: block;
-        }
+		/* Card ki Image ko rounded aur perfect fit karne ke liye */
+		.parent img {
+			width: 100%;
+			height: 220px;
+			object-fit: cover;
+			border-radius: 12px;
+			display: block;
+		}
 
-        /* Tags (Nature, Cloud) ka wrapper div */
-        .parent img+div {
-            margin-top: 15px;
-            display: flex;
-            gap: 8px;
-        }
+		/* Tags (Nature, Cloud) ka wrapper div */
+		.parent img+div {
+			margin-top: 15px;
+			display: flex;
+			gap: 8px;
+		}
 
-        /* Span tags ko badges (Nature, Lake) jaisa look dene ke liye */
-        .parent span {
-            background-color: #f1f3f5;
-            color: #6c757d;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 500;
-            border: 1px solid #e2e8f0;
-        }
+		/* Span tags ko badges (Nature, Lake) jaisa look dene ke liye */
+		.parent span {
+			background-color: #f1f3f5;
+			color: #6c757d;
+			padding: 4px 12px;
+			border-radius: 20px;
+			font-size: 12px;
+			font-weight: 500;
+			border: 1px solid #e2e8f0;
+		}
 
-        /* Card ke Title (H2) ka style */
-        .parent h2 {
-            color: #1a1a1a;
-            font-size: 22px;
-            margin: 15px 0 8px 0;
-            font-weight: 700;
-        }
+		/* Card ke Title (H2) ka style */
+		.parent h2 {
+			color: #1a1a1a;
+			font-size: 22px;
+			margin: 15px 0 8px 0;
+			font-weight: 700;
+		}
 
-        /* Description Paragraph text ka color aur spacing */
-        .parent p {
-            color: #626d7a;
-            font-size: 14px;
-            line-height: 1.5;
-            margin: 0 0 20px 0;
-        }
+		/* Description Paragraph text ka color aur spacing */
+		.parent p {
+			color: #626d7a;
+			font-size: 14px;
+			line-height: 1.5;
+			margin: 0 0 20px 0;
+		}
 
-        /* 'Read more' button ko sleek light-blue capsule button banane ke liye */
-        .parent button {
-            width: 100%;
-            background-color: #e8f2ff;
-            color: #3b82f6;
-            border: none;
-            padding: 12px;
-            border-radius: 25px;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background-color 0.2s, color 0.2s;
-            align-items: center;
-        }
+		/* 'Read more' button ko sleek light-blue capsule button banane ke liye */
+		.parent button {
+			width: 100%;
+			background-color: #e8f2ff;
+			color: #3b82f6;
+			border: none;
+			padding: 12px;
+			border-radius: 25px;
+			font-size: 14px;
+			font-weight: 600;
+			cursor: pointer;
+			transition: background-color 0.2s, color 0.2s;
+			
+		}
 
-        /* Button par mouse le jaane par hover effect */
-        .parent button:hover {
-            background-color: #3b82f6;
-            color: #ffffff;
-        }
-    </style>
-    <title>Task 3</title>
+		/* Button par mouse le jaane par hover effect */
+		.parent button:hover {
+			background-color: #3b82f6;
+			color: #ffffff;
+		}
+	</style>
+	<title>Task 3</title>
 </head>
 
 <body>
-    <div class="parent">
-        <div>
-            <img src="img.jpg" alt="Cloud pic">
-            <div>
-                <span>Nature</span> <span>Cloud</span>
+	<div class="parent">
+		<div>
+			<img src="img.jpg" alt="Cloud pic">
+			<div>
+				<span>Nature</span> <span>Cloud</span>
 
-            </div>
-            <h2>Cloud</h2>
-            <p>There is a very beautiful colour in sky and we can also see this white colour Clouds</p>
+			</div>
+			<h2>Cloud</h2>
+			<p>There is a very beautiful colour in sky and we can also see this white colour Clouds</p>
 
-            <button>Read more</button>
-        </div>
+			<button>Read more</button>
+		</div>
 
 
 
-    </div>
+	</div>
 
 </body>
 
