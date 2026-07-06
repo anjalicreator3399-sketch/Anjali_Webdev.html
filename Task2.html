@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         :root{
-            --color: blue;
-            --seccolor: lightblue;
+            --color: skyblue;
+            --seccolor: white;
         }
     * {
             margin: 0;
@@ -17,7 +17,7 @@
         }
 
         .navbar {
-            background-color:deepskyblue;
+            
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -25,7 +25,7 @@
         }
 
         .logo {
-            color: white;
+            color: var(--seccolor);
             font-size: 24px;
             font-weight: bold;
         }
@@ -39,12 +39,9 @@
             padding: 0px 20px;
         }
 
-        .nav-links a {
-            color: #e0e0e0;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: 500;
-            transition: color 0.3s;
+        .nav-links a:first-child{
+            color: var(--seccolor);
+            background-color: var(--color);
         }
 
         .nav-links a:hover {
@@ -67,6 +64,11 @@
         </ul>
     </nav>
     </header>
+    <main>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam nulla vitae et, labore ut quibusdam eos, praesentium quisquam quis reiciendis, accusantium cumque soluta repellendus. Doloremque mollitia aspernatur, ipsa dolores cumque, voluptate, accusamus repellat consequuntur expedita modi laborum fugit minima esse harum explicabo qui? Incidunt velit laborum ea accusantium earum ipsa?
+        </p>
+    </main>
 </body>
 
 </html>
