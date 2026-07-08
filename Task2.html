@@ -1,67 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        :root{
-            --color: skyblue;
-            --seccolor: white;
-        }
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        .boss{
-            display:flex;
-            list-style-type: none;
-            align-items: center;
-            padding: 5px;
-        }
-        .logo{
-            color: var(--seccolor);
-        padding: 3px;
-        background-color: var(--color);
-        border: 2px solid var(--seccolor black);
-        }
-        .pink{
-            color: var(--color pink);
-            background-color: var(--seccolor lightblue);
-            border: 3px solid var(--seccolor purple);
-            padding: 5px;
-        }
-        .black{
-            color: var(--color black);
-            background-color: var(--seccolor);
-            border: 3px solid var(--color yellow);
-        }
-        
-    </style>
+    :root {
+    /* Home ke liye variables */
+    --home-txt: pink;
+    --home-bg: lightblue;
+    --home-border: purple;
 
+    /* About ke liye variables */
+    --about-txt: white;
+    --about-bg: orange;
+    --about-border: red;
+
+    /* Services ke liye variables */
+    --service-txt: yellow;
+    --service-bg: black;
+    --service-border: green;
+
+    /* Contact ke liye variables */
+    --contact-txt: black;
+    --contact-bg: lightgreen;
+    --contact-border: darkgreen;
+    }
+
+    /* Home Link ke liye */
+    .pink {
+    color: var(--home-txt);
+    background-color: var(--home-bg);
+    border: 3px solid var(--home-border);
+    padding: 5px;
+    }
+
+    /* About Link ke liye */
+    .orange {
+    color: var(--about-txt);
+    background-color: var(--about-bg);
+    border: 3px solid var(--about-border);
+    padding: 5px;
+    }
+
+    /* Services Link ke liye */
+    .black {
+    color: var(--service-txt);
+    background-color: var(--service-bg);
+    border: 3px solid var(--service-border);
+    padding: 5px;
+    }
+    </style>
+    
     <title>task 4</title>
 </head>
 
 <body>
-      <div class="logo">MyWebsite</div>
+    <div class="logo">MyWebsite</div>
 
-        <ul class="boss">
-            <li class="pink">
-                <a href="#">Home</a></li>
+    <ul class="boss">
+        <li class="pink">
+            <a href="#">Home</a>
+        </li>
 
-            <li class="orange">
-               <a href="#">About</a></li>
+        <li class="orange">
+            <a href="#">About</a>
+        </li>
 
-            <li>
-                <a class="black" href="#">Services</a></li>
+        <li class="black">
+            <a href="#">Services</a>
+        </li>
 
-            <li>
-                <a class="green" href="#">Contact</a></li>
+        <li class="green">
+            <a href="#">Contact</a>
+        </li>
 
-        </ul>
+    </ul>
 
     <main>
         <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam nulla vitae et, labore ut quibusdam eos, praesentium quisquam quis reiciendis, accusantium cumque soluta repellendus. Doloremque mollitia aspernatur, ipsa dolores cumque, voluptate, accusamus repellat consequuntur expedita modi laborum fugit minima esse harum explicabo qui? Incidunt velit laborum ea accusantium earum ipsa?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam nulla vitae et, labore ut quibusdam eos,
+            praesentium quisquam quis reiciendis, accusantium cumque soluta repellendus. Doloremque mollitia aspernatur,
+            ipsa dolores cumque, voluptate, accusamus repellat consequuntur expedita modi laborum fugit minima esse
+            harum explicabo qui? Incidunt velit laborum ea accusantium earum ipsa?
         </p>
     </main>
 </body>
