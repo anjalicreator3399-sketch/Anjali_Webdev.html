@@ -5,97 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-    *{
-        padding: 0px;
-        margin: 0px;
-        box-sizing: border-box;
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
 
-    }
+        }
 
-    :root {
-    --home-txt: purple;
-    --home-bg: lightblue;
-    --home-border: pink;
+        :root {
+            --home-txt: purple;
+            --home-bg: lightblue;
+            --home-border: pink;
 
-    --about-txt: green;
-    --about-bg: orange;
-    --about-border: red;
+            --about-txt: green;
+            --about-bg: orange;
+            --about-border: red;
 
-    --service-txt: white;
-    --service-bg: black;
-    --service-border: green;
+            --service-txt: white;
+            --service-bg: black;
+            --service-border: green;
 
-    --contact-txt: black;
-    --contact-bg: lightgreen;
-    --contact-border: darkgreen;
+            --contact-txt: black;
+            --contact-bg: lightgreen;
+            --contact-border: darkgreen;
 
-    --para-bg: lightpink;
+            --para-bg: lightpink;
 
-    }
+        }
 
-    .owner{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        box-sizing: border-box;
-    }
+        .owner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
 
-    .logo{
-        color: var(--service-txt);
-    background-color: var(--home-bg);
-    border: 2px solid var(--service-bg);
-    font-size: 15px;
-    font-weight: bold;
-    padding: 2px;
-    }
+        .logo {
+            color: var(--service-txt);
+            background-color: var(--home-bg);
+            border: 2px solid var(--service-bg);
+            font-size: 20px;
+            font-weight: bold;
+            margin: 1px;
+            padding: 3px;
+        }
 
- .boss{
-     list-style-type: none;
-     display: flex;
-     gap: 1px;
-     
- }
+        .boss {
+            list-style-type: none;
+            display: flex;
+            gap: 1px;
 
- .pink, .black, .green, .orange{
-    padding: 2px;
-    margin: 1px;
-    box-sizing: border-box;
- }
+        }
 
- .boss a{
-    text-decoration: none;
- }
+        .pink,
+        .black,
+        .green,
+        .orange {
+            padding: 2px;
+            margin: 1px;
+            box-sizing: border-box;
+        }
 
-    .pink a{
-    color: var(--home-txt);
-    background-color: var(--home-bg);
-    border: 3px solid var(--home-border);
-    }
+        .boss a {
+            text-decoration: none;
+        }
 
-    .orange a{
-    color: var(--about-txt);
-    background-color: var(--about-bg);
-    border: 3px solid var(--about-border);
-    }
+        .pink a {
+            color: var(--home-txt);
+            background-color: var(--home-bg);
+            border: 3px solid var(--home-border);
+        }
 
-    .black a{
-    color: var(--service-txt);
-    background-color: var(--service-bg);
-    border: 3px solid var(--service-border);
-    }
+        .orange a {
+            color: var(--about-txt);
+            background-color: var(--about-bg);
+            border: 3px solid var(--about-border);
+        }
 
-    .green a{
-        color: var(--contact-txt);
-    background-color: var(--contact-bg);
-    border: 3px solid var(--contact-border);
-    }
+        .black a {
+            color: var(--service-txt);
+            background-color: var(--service-bg);
+            border: 3px solid var(--service-border);
+        }
 
-    p{
-        background-color: var(--para-bg);
-        padding: 20px;
-    }
+        .green a {
+            color: var(--contact-txt);
+            background-color: var(--contact-bg);
+            border: 3px solid var(--contact-border);
+        }
 
+        p {
+            background-color: var(--para-bg);
+            padding: 20px;
+        }
     </style>
 
     <title>task 4</title>
@@ -103,26 +106,26 @@
 
 <body>
     <nav class="owner">
-    <div class="logo">MyWebsite</div>
+        <div class="logo">MyWebsite</div>
 
-    <ul class="boss">
-        <li class="pink">
-            <a href="#">Home</a>
-        </li>
+        <ul class="boss">
+            <li class="pink">
+                <a href="#">Home</a>
+            </li>
 
-        <li class="orange">
-            <a href="#">About</a>
-        </li>
+            <li class="orange">
+                <a href="#">About</a>
+            </li>
 
-        <li class="black">
-            <a href="#">Services</a>
-        </li>
+            <li class="black">
+                <a href="#">Services</a>
+            </li>
 
-        <li class="green">
-            <a href="#">Contact</a>
-        </li>
+            <li class="green">
+                <a href="#">Contact</a>
+            </li>
 
-    </ul>
+        </ul>
     </nav>
 
     <main>
