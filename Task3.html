@@ -1,55 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    .owner{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-       /* box-sizing: border-box;*/
-    }
-    .boss{
-        list-style-type: none;
-        display: contents;
-        gap: 1px;
-    }
-    .boss a{
-        text-decoration: none;
-        background-color: aqua;
-    }
-    .boss{
-        border: 2px solid black;
-    }
-    .box1, .box2, .box3{
-        border: 3px solid black;
-    }
-    .box1{
-        width: 100px;
-        height: 150px;
-    }
-    .box2{
-        width: 100px;
-        height: 150px;
-    }
-    .box3{
-        width: 300px;
-        height: 350px;
-    }
-    .logo{
-        font-size: 15px;
-        font-weight: bold;
-        border: 2px solid green;
-    }
-</style>
-    <title>Task 5</title>
+    <title>Task 3 - Position Exercise</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #121212;
+            color: white;
+            height: 1000;
+        }
+
+        nav.owner {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #222;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #444;
+            z-index: 100;
+            /* Iska z-index sabse zyada hai taaki sab kuch iske peeche chhup jaye */
+        }
+
+        nav.owner .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav.owner ul.boss {
+            display: flex;
+            list-style: none;
+        }
+
+        nav.owner ul.boss li {
+            margin-left: 20px;
+        }
+
+        nav.owner ul.boss li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .main-wrapper {
+            width: 600px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .green-zone {
+            background-color: green;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+
+            position: relative;
+            /* Relative position taaki z-index kaam kare */
+            z-index: 2;
+            /* Iska z-index black zone se zyada hai taaki yeh upar rahe */
+        }
+
+        .pink-box,
+        .blue-box {
+            width: 180px;
+            height: 180px;
+            display: inline-block;
+            margin: 0 15px;
+            vertical-align: middle;
+        }
+
+        .pink-box {
+            background-color: #f78da7;
+        }
+
+        .blue-box {
+            background-color: #3b82f6;
+        }
+
+        .black-zone {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 30px;
+            border: 1px solid #555;
+            width: 90%;
+            margin: -20px auto 0 auto;
+            /* Negative margin se yeh thoda green box ke peeche daba rahega starting mein */
+
+            position: relative;
+            /* Relative taaki z-index kaam kare */
+            z-index: 1;
+            /* Kam z-index taaki yeh green zone ke peeche (below) rahe */
+        }
+
+        .black-zone p {
+            font-size: 18px;
+        }
+
+        .orange-circle {
+            width: 30px;
+            height: 30px;
+            background-color: #ff9f43;
+            border-radius: 50%;
+
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
+
 <body>
+
     <nav class="owner">
         <div class="logo">Box</div>
         <ul class="boss">
@@ -57,14 +134,24 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
-
         </ul>
     </nav>
-    <div>
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box3"></div>
-</div>
+
+    <div class="main-wrapper">
+
+        <div class="green-zone">
+            <div class="pink-box"></div>
+            <div class="blue-box"></div>
+        </div>
+
+        <div class="black-zone">
+            <p>Welcome to this Sigma Web Development Express</p>
+        </div>
+
+    </div>
+
+    <div class="orange-circle"></div>
 
 </body>
+
 </html>
